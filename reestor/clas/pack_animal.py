@@ -1,4 +1,4 @@
-import humans_friend
+from humans_friend import human_friend
 
-class pack_animal(humans_friend):
+class pack_animal(human_friend):
     pass

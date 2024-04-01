@@ -14,10 +14,12 @@ class human_friend(ABC):
     def get_birth(self):
         return (str(self.birth))
     def get_comands(self):
-        return (str[self.comands])
+        tmp=''
+        for com in self.comands:
+            tmp = tmp + com +', '
+        return (tmp)
     def learn(self,comands):
         for com in comands.split(','):
-            print(com)
             self.comands.append(com)
 
     @abstractmethod
